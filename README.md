@@ -56,6 +56,13 @@ export interface Person {
 */
 ```
 
+### demo
+
+```bash
+cd demo
+deno run -A example.js > example.d.ts
+```
+
 ## JSONSchema.getExample / schema2json
 
 - extract a example instance from JSON Schema
@@ -71,11 +78,4 @@ export interface Person {
   { name: "name", type: "string", example: "taisukef" },
   { name: "age", type: "integer", example: 43 },
 ];
-```
-
-### demo
-
-```bash
-cd demo
-deno run -A example.js > example.d.ts
 ```
