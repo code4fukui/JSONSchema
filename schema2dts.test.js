@@ -17,7 +17,7 @@ Deno.test("simple", () => {
     "required": [ "productId" ]
   };
   const dts = schema2dts(schema);
-  t.assertEquals(dts, `export interface Product { // A product from Acme's catalog
+  t.assertEquals(dts, `export type Product = { // A product from Acme's catalog
   productId: number; // The unique identifier for a product
 }`);
 });
@@ -47,7 +47,7 @@ Deno.test("types", () => {
     "required": [ "name", "altname" ]
   };
   const dts = schema2dts(schema);
-  t.assertEquals(dts, `export interface Person {
+  t.assertEquals(dts, `export type Person = {
   name: string;
   altname: string | null;
   age?: number;

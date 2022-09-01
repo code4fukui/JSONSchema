@@ -47,7 +47,7 @@ export const schema2dts = (schema, title) => {
 
   const toStringDTS = (name, dts) => {
     const res = [];
-    res.push("export interface " + name + " {" + (dts.description ? " // " + dts.description : ""));
+    res.push("export type " + name + " = {" + (dts.description ? " // " + dts.description : ""));
     const tos = (obj, indent) => {
       for (const name in obj) {
         const t = obj[name];
