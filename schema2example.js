@@ -1,5 +1,5 @@
 // get JSON with the example or dummy value
-export const schema2json = (schema) => {
+export const schema2example = (schema) => {
   const getType = (type) => {
     if (Array.isArray(type)) {
       type = type.filter(t => t != "null")[0];
@@ -41,6 +41,6 @@ export const schema2json = (schema) => {
 };
 /*
 const sc = JSON.parse(await Deno.readTextFile("./NewCollege.schema.json"));
-const d = schema2json(sc);
+const d = schema2example(sc);
 console.log(d);
 */

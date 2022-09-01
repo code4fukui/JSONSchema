@@ -1,11 +1,11 @@
 import * as t from "https://deno.land/std/testing/asserts.ts";
-import { schema2json } from "./schema2json.js";
+import { schema2example } from "./schema2example.js";
 
 Deno.test("simple", () => {
   const schema = {
     type: "string"
   };
-  t.assertEquals(schema2json(schema), "abc");
+  t.assertEquals(schema2example(schema), "abc");
 });
 Deno.test("object", () => {
   const schema = {
@@ -24,5 +24,5 @@ Deno.test("object", () => {
       }
     }
   };
-  t.assertEquals(schema2json(schema), { a: 123, b: [5] });
+  t.assertEquals(schema2example(schema), { a: 123, b: [5] });
 });

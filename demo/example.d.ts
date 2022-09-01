@@ -1,4 +1,4 @@
-export interface Qiita_API_v2_JSON_Schema { // In this schema file, we represents the public interface of Qiita API v2 in JSON Hyper Schema draft v4.
+export type Qiita_API_v2_JSON_Schema = { // In this schema file, we represents the public interface of Qiita API v2 in JSON Hyper Schema draft v4.
   access_token: { // Access token for Qiita API v2
     client_id: string; // An unique ID to identify a registered client ("a91f0396a0968ff593eafdd194e3d17d32c41b1da7b25e873b42e9058058cd9d")
     scopes: string[]; // Authorized action scopes of the access token
@@ -275,4 +275,4 @@ export interface Qiita_API_v2_JSON_Schema { // In this schema file, we represent
     twitter_screen_name: string | null; // Twitter screen name ("qiita")
     website_url: string | null; // Website URL ("https://qiita.com")
   };
-};
+}
