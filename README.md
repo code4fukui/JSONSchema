@@ -1,7 +1,6 @@
 # JSONSchema.js
 
-- a manipulate JSON Schema ES module for JavaScript
-- [JSON Schema | The home of JSON Schema](https://json-schema.org/)
+- a manipulate [JSON Schema](https://json-schema.org/) ES module for JavaScript
 
 ```JavaScript
 import { JSONSchema } from "https://code4fukui.github.io/JSONSchema/JSONSchema.js";
