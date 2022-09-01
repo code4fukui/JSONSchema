@@ -77,5 +77,5 @@ deno run -A example.js > example.d.ts
   { "name": "did", "type": "string", "example": "AA383838", "description": "publickey" },
   { "name": "name", "type": "string", "example": "taisukef" },
   { "name": "age", "type": "integer", "example": 43 }
-];
+]
 ```
