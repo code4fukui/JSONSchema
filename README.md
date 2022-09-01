@@ -1,4 +1,4 @@
-# JSONSchema
+# JSONSchema.js
 
 - a manipulate JSON Schema ES module for JavaScript
 - [JSON Schema | The home of JSON Schema](https://json-schema.org/)
@@ -74,8 +74,8 @@ deno run -A example.js > example.d.ts
 
 ```json
 [
-  { name: "did", type: "string", example: "AA383838", description: "publickey" },
-  { name: "name", type: "string", example: "taisukef" },
-  { name: "age", type: "integer", example: 43 },
+  { "name": "did", "type": "string", "example": "AA383838", "description": "publickey" },
+  { "name": "name", "type": "string", "example": "taisukef" },
+  { "name": "age", "type": "integer", "example": 43 }
 ];
 ```
