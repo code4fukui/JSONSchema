@@ -7,20 +7,6 @@
 ```JavaScript
 import { JSONSchema } from "https://code4fukui.github.io/JSONSchema/JSONSchema.js";
 
-await JSONSchema.validate(instance, schema);
-```
-
-## async JSONSchema.validate(instance, schema)
-
-- validate instance data by JSON Schema
-
-## JSONSchema.toDTS / schema2dts
-
-- A converter function JSON Schema to TypeScript type definition file (d.ts)
-
-### Usage
-
-```javascript
 const schema = {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "Person",
@@ -44,6 +30,21 @@ const schema = {
   },
   "required": [ "name", "altname" ]
 };
+const res = await JSONSchema.validate({ name: "taisukef" }, schema);
+console.log(res.errors); // requires property "altname"
+```
+
+## async JSONSchema.validate(instance, schema)
+
+- validate instance data by JSON Schema
+
+## JSONSchema.toDTS / schema2dts
+
+- A converter function JSON Schema to TypeScript type definition file (d.ts)
+
+### Usage
+
+```javascript
 const dts = JSONSchema.toDTS(schema);
 console.log(dts);
 /*
