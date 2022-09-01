@@ -67,7 +67,7 @@ export const schema2dts = (schema, title) => {
       }
     };
     tos(dts.type, "  ");
-    res.push("};");
+    res.push("}");
     return res.join("\n");
   };
   return toStringDTS(name, dts);
