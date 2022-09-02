@@ -6,7 +6,7 @@
 import { JSONSchema } from "https://code4fukui.github.io/JSONSchema/JSONSchema.js";
 
 const schema = {
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": "http://json-schema.org/draft-07/hyper-schema#",
   "title": "Person",
   "type": "object",
   "properties": {
