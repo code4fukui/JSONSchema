@@ -1,6 +1,8 @@
 # JSONSchema.js
 
-A manipulate [JSON Schema](https://json-schema.org/) ES module for JavaScript.
+> 日本語のREADMEはこちらです: [README.ja.md](README.ja.md)
+
+A JavaScript ES module for manipulating [JSON Schema](https://json-schema.org/).
 
 ## Features
 
