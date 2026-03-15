@@ -1,6 +1,15 @@
 # JSONSchema.js
 
-- a manipulate [JSON Schema](https://json-schema.org/) ES module for JavaScript
+A manipulate [JSON Schema](https://json-schema.org/) ES module for JavaScript.
+
+## Features
+
+- Validate JSON data against a JSON Schema
+- Convert JSON Schema to TypeScript type definition file (d.ts)
+- Extract an example instance from a JSON Schema
+- Create JSON Schema from a JSON data structure
+
+## Usage
 
 ```JavaScript
 import { JSONSchema } from "https://code4fukui.github.io/JSONSchema/JSONSchema.js";
@@ -32,50 +41,12 @@ const res = await JSONSchema.validate({ name: "taisukef" }, schema);
 console.log(res.errors); // requires property "altname"
 ```
 
-## Functions
+### Functions
 
-### async JSONSchema.validate(instance, schema)
-
-- validate instance data by JSON Schema
-
-### JSONSchema.toDTS / schema2dts
-
-- A converter function JSON Schema to TypeScript type definition file (d.ts)
-
-```javascript
-const dts = JSONSchema.toDTS(schema);
-console.log(dts);
-/*
-export interface Person {
-  name: string;
-  altname: string | null;
-  age?: number;
-  friends?: string[];
-};
-*/
-```
-
-```bash
-cd demo
-deno run -A example.js > example.d.ts
-```
-
-### JSONSchema.getExample / schema2json
-
-- extract a example instance from JSON Schema
-
-### JSONSchema.fromJSON(schemajson)
-
-- create JSON Schema by SchemaJSON json data
-- see also [SchemaCSV](https://github.com/code4fukui/SchemaCSV)
-
-```json
-[
-  { "name": "did", "type": "string", "example": "AA383838", "description": "publickey" },
-  { "name": "name", "type": "string", "example": "taisukef" },
-  { "name": "age", "type": "integer", "example": 43 }
-]
-```
+- `async JSONSchema.validate(instance, schema)`: Validate instance data by JSON Schema
+- `JSONSchema.toDTS(schema)`: Convert JSON Schema to TypeScript type definition file (d.ts)
+- `JSONSchema.getExample(schema)`: Extract an example instance from JSON Schema
+- `JSONSchema.fromJSON(schemajson)`: Create JSON Schema from a JSON data structure
 
 ## Test
 
@@ -85,4 +56,8 @@ deno test -A
 
 ## Dependencies
 
-- [jsonscheama-es - JSON Schema validater ES module](https://github.com/code4fukui/jsonschema-es/)
+- [jsonscheama-es](https://github.com/code4fukui/jsonschema-es/) - JSON Schema validator ES module
+
+## License
+
+MIT
