@@ -62,4 +62,4 @@ deno test -A
 
 ## License
 
-MIT
+MIT License — see [LICENSE](LICENSE).

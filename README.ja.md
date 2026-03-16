@@ -1,12 +1,13 @@
 # JSONSchema.js
 
-JSONスキーマ（JSON Schema）を操作するためのJavaScriptモジュールです。
+JSON Schemaを操作するためのJavaScriptモジュールです。
 
 ## 機能
-- JSONデータをJSONスキーマに対して検証する
-- JSONスキーマをTypeScriptの型定義ファイル（d.ts）に変換する
-- JSONスキーマからサンプルデータを生成する
-- JSONデータからJSONスキーマを生成する
+
+- JSONデータをJSON Schemaに対して検証する
+- JSON SchemaをTypeScriptの型定義ファイル（d.ts）に変換する
+- JSON Schemaからサンプルデータを生成する
+- JSONデータからJSON Schemaを生成する
 
 ## 使い方
 
